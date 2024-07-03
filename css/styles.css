@@ -13,40 +13,31 @@ body {
     margin: 0;
 }
 
-/* Header styling */
-header {
-    background-color: #343a40;
-    color: #fff;
-    padding: 20px 0;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-header nav ul li {
-    margin: 0 10px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1em;
-    transition: color 0.3s ease;
-}
-
-header nav ul li a:hover {
-    color: #000000;
-}
-
 /* Hero section styling */
 #hero {
-    background: url('../hero-image.jpg') no-repeat center center/cover;
-    color: #fff;
+    background: url('../wallpaper.jpg') center center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     text-align: center;
-    padding: 100px 20px;
+    color: #fff;
+}
+
+#hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#hero .content {
+    z-index: 2;
+    padding: 20px;
 }
 
 #hero h1 {
@@ -55,17 +46,16 @@ header nav ul li a:hover {
 }
 
 .hero-subtitle {
-    font-size: 1.5em; /* Adjust the font size as needed */
-    color: #ffffff; /* Change the color as needed */
+    font-size: 1.5em;
+    color: #ffffff;
 }
 
 /* Section styling */
 section {
     padding: 40px 20px;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 20px auto;
     background-color: #fff;
-    margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -75,6 +65,7 @@ section h2 {
     margin-bottom: 20px;
     color: #343a40;
     text-align: center;
+    position: relative;
 }
 
 section p, section ul {
@@ -82,19 +73,11 @@ section p, section ul {
 }
 
 /* Project section */
-.project-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
 .project {
     background-color: #f0f0f0;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: calc(50% - 20px);
 }
 
 .project h3 {
@@ -133,5 +116,24 @@ footer {
 }
 
 .social-media a:hover {
-    color: #ffc107;
+    color: #ff0000;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2em;
+    }
+    .project h3 {
+        font-size: 1.2em;
+    }
+    section {
+        padding: 20px;
+    }
+    section h2 {
+        font-size: 1.5em;
+    }
+    footer {
+        padding: 10px 0;
+    }
 }

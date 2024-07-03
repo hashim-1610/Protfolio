@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammed Hashim Beeran Kutty K N - Portfolio</title>
+    <title>Portfolio - Mohammed Hashim</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="developer.png" type="image/png" sizes="32x32">
 </head>
+
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <section id="hero">
-        <h1>Welcome to My Portfolio</h1>
-        <p class="hero-subtitle">Hi, I'm MOHAMMED HASHIM .</p>
+    <section id="hero" class="text-center text-light d-flex align-items-center justify-content-center">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Welcome to My Portfolio</h1>
+            <p class="hero-subtitle">Hi, I'm Mohammed Hashim Beeran Kutty K N, a software engineer.</p>
+        </div>
     </section>
-    
 
-    <section id="about">
-        <h2>About Me</h2>
+    <section id="about" class="container my-5" data-aos="fade-up">
+        <h2 class="text-center">About Me</h2>
         <p>Based in Bamberg, Bayern, I am a graduate student at Otto Friedrich University pursuing a Master's in International Software Systems Science. I have a Bachelor's in Computer Science and Engineering from the Federal Institute of Science and Technology. My professional experience includes working as an Assistant Software Engineer at Tata Consultancy Services.</p>
     </section>
 
-    <section id="education">
-        <h2>Education</h2>
+    <section id="education" class="container my-5" data-aos="fade-up">
+        <h2 class="text-center">Education</h2>
         <ul>
             <li>
                 <strong>Otto Friedrich University</strong> - M.Sc in International Software Systems Science<br>
@@ -48,8 +60,8 @@
         </ul>
     </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
+    <section id="experience" class="container my-5" data-aos="fade-up">
+        <h2 class="text-center">Experience</h2>
         <ul>
             <li>
                 <strong>Tata Consultancy Services</strong> - Assistant Software Engineer<br>
@@ -64,32 +76,36 @@
         </ul>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-list">
-            <div class="project">
-                <h3>Disaster Crisis Identification from Twitter Posts Based on Deep Learning Model</h3>
-                <p>Developed a system to identify relevant and non-relevant posts about disasters, facilitating timely assistance. Achieved over 90% precision in identifying emergency tweets using various models and presented findings at a conference.</p>
-                <p><strong>Technologies Used:</strong> Python, TensorFlow, Keras, NLP libraries, data preprocessing tools.</p>
+    <section id="projects" class="container my-5" data-aos="fade-up">
+        <h2 class="text-center">Projects</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="project p-4 bg-light rounded shadow">
+                    <h3>Disaster Crisis Identification from Twitter Posts Based on Deep Learning Model</h3>
+                    <p>Developed a system to identify relevant and non-relevant posts about disasters, facilitating timely assistance. Achieved over 90% precision in identifying emergency tweets using various models and presented findings at a conference.</p>
+                    <p><strong>Technologies Used:</strong> Python, TensorFlow, Keras, NLP libraries, data preprocessing tools.</p>
+                </div>
             </div>
-            <div class="project">
-                <h3>Python Missing Module Installer</h3>
-                <p>Developed a system to automatically identify and install missing Python modules, ensuring uninterrupted coding for beginners. Utilized Python, BeautifulSoup, Python Flask, and SQLite.</p>
-                <p><strong>Key Features:</strong> Python Flask-based interface, ranking and storage of installation commands, user assistance with top 5 installation commands.</p>
+            <div class="col-md-6 mb-4">
+                <div class="project p-4 bg-light rounded shadow">
+                    <h3>Python Missing Module Installer</h3>
+                    <p>Developed a system to automatically identify and install missing Python modules, ensuring uninterrupted coding for beginners. Utilized Python, BeautifulSoup, Python Flask, and SQLite.</p>
+                    <p><strong>Key Features:</strong> Python Flask-based interface, ranking and storage of installation commands, user assistance with top 5 installation commands.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
+    <section id="skills" class="container my-5" data-aos="fade-up">
+        <h2 class="text-center">Skills</h2>
         <ul>
             <li>Languages: C++, C, Python, Java, SQL, LaTeX</li>
             <li>Developer Tools: VS Code, PyCharm, IntelliJ, Canva</li>
         </ul>
     </section>
 
-    <section id="achievements">
-        <h2>Achievements and Extracurriculars</h2>
+    <section id="achievements" class="container my-5" data-aos="fade-up">
+        <h2 class="text-center">Achievements and Extracurriculars</h2>
         <ul>
             <li>Received IEEE Student Branch’s vibrant student award; chaired IEEE Computer Society (2020-2021).</li>
             <li>Organized national/state level events with 500 participants; served as Club’s Secretary (2019-2020).</li>
@@ -99,15 +115,19 @@
         </ul>
     </section>
 
-    <footer>
+    <footer class="bg-dark text-light text-center py-4">
         <div class="social-media">
-            <a href="https://www.linkedin.com/in/mohammed-hashim-86688515a/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/your-instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="mailto:de.hashim1610@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" class="text-light mx-2"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/your-instagram" target="_blank" class="text-light mx-2"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:your-email@gmail.com" class="text-light mx-2"><i class="fas fa-envelope"></i></a>
         </div>
         <p>&copy; 2024 Mohammed Hashim Beeran Kutty K N. All rights reserved.</p>
     </footer>
 
-    <script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
