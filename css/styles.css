@@ -156,3 +156,29 @@ footer p {
         font-size: 1.2em;
     }
 }
+
+/* Project Tabs */
+.nav-tabs {
+    border-bottom: 2px solid #ddd;
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: -1px;
+}
+
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: #004080; /* Dark Blue */
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: #ddd #ddd #fff;
+}
+
+.nav-tabs .nav-link.active {
+    color: #004080; /* Dark Blue */
+    background-color: #fff;
+    border-color: #ddd #ddd #fff;
+}

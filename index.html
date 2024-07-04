@@ -41,7 +41,18 @@
 
     <section id="about" class="container my-5" data-aos="fade-up">
         <h2 class="text-center">About Me</h2>
-        <p>Based in Bamberg, Bayern, I am a graduate student at Otto Friedrich University pursuing a Master's in International Software Systems Science. I have a Bachelor's in Computer Science and Engineering from the Federal Institute of Science and Technology. My professional experience includes working as an Assistant Software Engineer at Tata Consultancy Services.</p>
+        <div class="row">
+            <div class="col-lg-4 text-center">
+                <img src="profile-pic.jpg" alt="Mohammed Hashim" class="img-fluid rounded-circle mb-3" style="max-width: 200px;">
+            </div>
+            <div class="col-lg-8">
+                <p>Hello! I am <strong>Mohammed Hashim</strong>, a passionate and driven graduate student currently pursuing a Master's degree in International Software Systems Science at Otto Friedrich University in Bamberg, Bayern. My journey into the world of technology began with a Bachelor's degree in Computer Science and Engineering from the Federal Institute of Science and Technology in Kochi, India.</p>
+                <p>During my undergraduate studies, I developed a keen interest in software development, which led me to work as an Assistant Software Engineer at Tata Consultancy Services. Here, I gained invaluable experience in implementing Identity and Access Management (IAM) systems, transitioning databases, and collaborating on backend development using the Flask framework. These experiences have honed my technical skills and taught me the importance of teamwork, perseverance, and continuous learning.</p>
+                <p>My goal is to leverage my technical expertise and problem-solving abilities to contribute to innovative projects that make a positive impact on society. I am particularly interested in areas such as artificial intelligence, machine learning, and data science. I believe in the power of technology to solve real-world problems and improve the quality of life.</p>
+                <p>Outside of my academic and professional pursuits, I enjoy staying active through sports and outdoor activities. I am an avid reader, always eager to learn new things, and I love to explore different cultures through travel and cuisine.</p>
+                <p>Thank you for taking the time to visit my portfolio. I am excited about the possibilities that lie ahead and look forward to connecting with like-minded professionals and enthusiasts.</p>
+            </div>
+        </div>
     </section>
 
     <section id="education" class="container my-5" data-aos="fade-up">
@@ -58,47 +69,70 @@
         </ul>
     </section>
 
-    <section id="experience" class="container my-5" data-aos="fade-up">
-        <h2 class="text-center">Experience</h2>
+<section id="experience" class="container my-5" data-aos="fade-up">
+    <h2 class="text-center mb-4">Experience</h2>
+    
+    <div class="experience-item">
+        <strong>Tata Consultancy Services</strong> - Assistant Software Engineer<br>
+        Bangalore, India (July 2021 - August 2022)<br><br>
+        
         <ul>
-            <li>
-                <strong>Tata Consultancy Services</strong> - Assistant Software Engineer<br>
-                Bangalore, India (July 2021 - August 2022)<br>
-                <ul>
-                    <li>Assisted in the implementation of IAM (Identity and Access Management) utilizing Single Sign-On (SSO) technology.</li>
-                    <li>Contributed to the transition from CockroachDB to PostgreSQL.</li>
-                    <li>Collaborated on Python backend development using Flask framework.</li>
-                    <li>Maintained documentation and generated reports using LaTeX.</li>
-                </ul>
-            </li>
+            <li>Assisted in the implementation of IAM (Identity and Access Management) utilizing Single Sign-On (SSO) technology as a junior developer.</li>
+            <li>Contributed to the transition from CockroachDB to PostgreSQL.</li>
+            <li>Collaborated on Python backend development using Flask framework.</li>
+            <li>Maintained documentation and generated reports using LaTeX.</li>
+            <li>Gained valuable teamwork skills and made timely contributions.</li>
         </ul>
-    </section>
+    </div>
+    
+</section>
+    
+    
 
     <section id="projects" class="container my-5" data-aos="fade-up">
         <h2 class="text-center">Projects</h2>
-        <ul>
-            <li>
-                <strong>Hybrid Encrypted File Transfer Application</strong> - Academic Project (May 2020)<br>
-                Developed an application for file transfer using hybrid encryption algorithms and studied different encryption techniques.
+        <ul class="nav nav-tabs" id="projectTabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="project1-tab" data-toggle="tab" href="#project1" role="tab" aria-controls="project1" aria-selected="true">Project 1</a>
             </li>
-            <li>
-                <strong>Home Automation System</strong> - Academic Project (February 2020)<br>
-                Created a home automation system utilizing NodeMCU and Blynk, allowing control of home appliances via mobile app.
-            </li>
-            <li>
-                <strong>Library Management System</strong> - Academic Project (October 2019)<br>
-                Implemented a library management system using Django framework for streamlined library operations.
+            <li class="nav-item">
+                <a class="nav-link" id="project2-tab" data-toggle="tab" href="#project2" role="tab" aria-controls="project2" aria-selected="false">Project 2</a>
             </li>
         </ul>
+        <div class="tab-content" id="projectTabsContent">
+            <div class="tab-pane fade show active" id="project1" role="tabpanel" aria-labelledby="project1-tab">
+                <div class="project mt-4">
+                    <h3>Disaster Crisis Identification from Twitter Posts Based on Deep Learning Model</h3>
+                    <ul>
+                        <li>Led a team of four to develop a disaster detection system, boosting accuracy by 15%.</li>
+                    	<li>Identified emergency tweets with over 90% precision using various models.</li>
+                    	<li>Processed data from AIDR, enhancing model performance by 20%.</li>
+                    	<li>Used Python and relevant libraries to develop and test models for real-time crisis detection.</li>
+                    	<li>Presented findings at a conference, showcasing our project to a wider audience.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="project2" role="tabpanel" aria-labelledby="project2-tab">
+                <div class="project mt-4">
+                    <h3>Python Missing Module Installer</h3>
+                    <ul>
+                    	<li>Utilized Python, BeautifulSoup, Python Flask, and SQLite, with installation commands ranked by Stack Overflow upvotes.</li>
+                    	<li>Created a Python Flask-based interface for user input and command retrieval.</li>
+                    	<li>Ranked installation commands by upvotes and stored them in a SQLite database.</li>
+                    	<li>Displayed top 5 installation commands for easy module installation.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="skills" class="container my-5" data-aos="fade-up">
         <h2 class="text-center">Skills</h2>
         <ul>
-            <li><strong>Programming Languages:</strong> Python, JavaScript, Java, C++</li>
+            <li><strong>Programming Languages:</strong> Python, JavaScript, Java, C++, C, SQL, LaTeX</li>
             <li><strong>Web Development:</strong> HTML, CSS, JavaScript, Django, Flask</li>
             <li><strong>Database Management:</strong> PostgreSQL, MySQL</li>
-            <li><strong>Tools:</strong> Git, Docker, Jenkins</li>
+            <li><strong>Tools:</strong> Git, VS Code, PyCharm, IntelliJ, Canva</li>
             <li><strong>Operating Systems:</strong> Windows, Linux</li>
         </ul>
     </section>
@@ -106,8 +140,11 @@
     <section id="achievements" class="container my-5" data-aos="fade-up">
         <h2 class="text-center">Achievements</h2>
         <ul>
-            <li>Awarded "Best Project" for Hybrid Encrypted File Transfer Application.</li>
-            <li>Secured first place in a coding competition held by Federal Institute of Science and Technology.</li>
+            <li>Received IEEE Student Branch’s vibrant student award; chaired IEEE Computer Society (2020-2021).</li>
+            <li>Organized National/State level events consisting of 500 participants; served as Club’s Secretary (2019-2020).</li>
+            <li>Offered a job by Tata Consultancy Services post a coding competition.</li>
+            <li>Achieved <a href="https://www.linkedin.com/feed/update/urn:li:activity:7197161982456692736/">Third place</a> in FAU-Erlangen’s Annual Tensor tournament.</li>
+            <li>Contributed to college quiz and coding teams, honing teamwork and problem-solving skills.</li>
         </ul>
     </section>
 
@@ -117,7 +154,6 @@
             <a href="https://github.com/hashim-1610" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/mohammed-hashim-86688515a/" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://www.instagram.com/hashim_1610?igsh=aTBvOTFzdnJ6Y3Fm" target="_blank"><i class="fab fa-instagram"></i></a>
-
         </div>
         <p>&copy; 2024 Mohammed Hashim. All Rights Reserved.</p>
     </footer>
