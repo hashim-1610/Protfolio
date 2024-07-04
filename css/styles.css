@@ -1,139 +1,158 @@
-/* Reset some basic elements for better cross-browser compatibility */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f8f9fa;
+    background: url('../wallpaper.jpg') no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
+    padding: 0;
+    color: #333;
 }
 
-/* Hero section styling */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+.navbar {
+    background-color: #004080; /* Dark Blue */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #00d4d4; /* Teal */
+}
+
+.nav-link {
+    font-size: 1.1em;
+    color: #00d4d4; /* Teal */
+}
+
+.nav-link:hover {
+    color: #ffffff; /* White */
+}
+
+/* Main Content */
+main {
+    padding-top: 60px;
+}
+
+/* Hero Section */
 #hero {
-    background: url('../wallpaper.jpg') center center/cover no-repeat;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: rgba(0, 0, 64, 0.8); /* Dark Blue with transparency */
     position: relative;
-    text-align: center;
-    color: #fff;
 }
 
 #hero .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: url('path/to/background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
 }
 
 #hero .content {
-    z-index: 2;
-    padding: 20px;
+    z-index: 1;
+    position: relative;
 }
 
 #hero h1 {
     font-size: 3em;
-    margin-bottom: 20px;
+    font-weight: bold;
+    color: #00d4d4; /* Teal */
 }
 
-.hero-subtitle {
+#hero .hero-subtitle {
     font-size: 1.5em;
-    color: #ffffff;
+    color: #ffffff; /* White */
 }
 
-/* Section styling */
+/* Section Styles */
 section {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: 20px auto;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-opaque white background */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    margin-bottom: 30px; /* Space between sections */
 }
 
-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #343a40;
-    text-align: center;
-    position: relative;
+h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #004080; /* Dark Blue */
 }
 
-section p, section ul {
-    margin-bottom: 20px;
+p, ul {
+    font-size: 1.1em;
+    line-height: 1.6;
 }
 
-/* Project section */
-.project {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.project h3 {
-    margin-bottom: 10px;
-    color: #495057;
-}
-
-.project p {
-    margin-bottom: 10px;
-    color: #333;
-}
-
-/* Skills and Achievements section styling */
 ul {
-    list-style-type: disc;
-    padding-left: 40px;
+    padding-left: 20px;
 }
 
 li {
     margin-bottom: 10px;
 }
 
-/* Footer styling */
+/* Project Section */
+.project {
+    background-color: rgba(248, 249, 250, 0.9); /* Slightly less opaque for projects */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    color: #004080; /* Dark Blue */
+}
+
+/* Footer Styles */
 footer {
-    background-color: #343a40;
-    color: #fff;
-    text-align: center;
+    background-color: #004080; /* Dark Blue */
+    color: #00d4d4; /* Teal */
     padding: 20px 0;
 }
 
-.social-media a {
-    color: #fff;
+footer .social-media {
+    margin-bottom: 10px;
+}
+
+footer .social-media a {
+    color: #00d4d4; /* Teal */
     margin: 0 10px;
     font-size: 1.5em;
-    transition: color 0.3s ease;
 }
 
-.social-media a:hover {
-    color: #ff0000;
+footer .social-media a:hover {
+    color: #ffffff; /* White */
 }
 
-/* Responsive design */
+footer p {
+    margin: 0;
+    color: #00d4d4; /* Teal */
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
+    header {
+        top: 0;
+    }
+
     #hero h1 {
-        font-size: 2em;
+        font-size: 2.5em;
     }
-    .project h3 {
+
+    #hero .hero-subtitle {
         font-size: 1.2em;
-    }
-    section {
-        padding: 20px;
-    }
-    section h2 {
-        font-size: 1.5em;
-    }
-    footer {
-        padding: 10px 0;
     }
 }
