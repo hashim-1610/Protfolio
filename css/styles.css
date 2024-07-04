@@ -49,8 +49,11 @@ main {
 #hero .overlay {
     background: url('path/to/background-image.jpg') no-repeat center center fixed;
     background-size: cover;
-    position: relative;
-    height: 100vh;
+    position: absolute; /* Change to absolute for full screen coverage */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     z-index: 1;
     display: flex;
     align-items: center;
@@ -61,7 +64,7 @@ main {
 }
 
 #hero .content {
-    z-index: 1;
+    z-index: 2; /* Ensure content is above the background image */
     position: relative;
 }
 
@@ -146,6 +149,14 @@ footer p {
 @media (max-width: 768px) {
     header {
         top: 0;
+    }
+
+    #hero {
+        background-position: center center;
+    }
+
+    #hero .overlay {
+        background-size: cover;
     }
 
     #hero h1 {
